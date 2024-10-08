@@ -1,4 +1,5 @@
 import NavBar from '../components/NavBar';
+import Image from "next/image";
 import Layout
 from '../components/Layout';
 import TypeWriter from '../components/Typewriter';

@@ -14,7 +14,7 @@ export default function NavBarLink({ text, link, customstyle }) {
             <Link href={link}>
             <div className={`w-16 sm:w-24
                 pt-4 pb-4 sm:p-4  
-                text-center rounded-full drop-shadow-md 
+                text-center rounded-full drop-shadow-md opacity-80 
                 ${isActive ? 'bg-light-mid text-dark' : 'bg-dark text-light-mid hover:bg-mid hover:text-light'} ${customstyle}`
                 }>
                 <p className="text-base text-xs sm:text-sm"> {text} </p>

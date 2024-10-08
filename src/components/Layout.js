@@ -10,7 +10,7 @@ export default function Layout({ children }) {
         <div className="flex-grow p-4 sm:p-10 overflow-y-auto">
           {children}
         </div>
-        <div className="footer fixed bottom-0 flex items-center justify-center mb-10 w-full">
+        <div className="footer fixed bottom-0 flex items-center justify-center mb-5 w-full">
           <NavBar />
         </div>
       </div>
