@@ -1,26 +1,26 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
-
+import Head
+ from "next/head";
 export default function NavBarLink({ text, link, customstyle }) {
     const router = useRouter();
     const isActive = (router.pathname === link);
-    console.log(router.pathname);
-    console.log(isActive);
-
-    // return (
-    //     <Link href={link}>
-    //       <div className={`w-48 mb-5 p-4 text-center ${isActive ? 'bg-light-mid text-dark' : 'bg-dark text-light-mid hover:bg-mid hover:text-light'} ${customstyle}`}>
-    //         <p> {text} </p>
-    //       </div>
-    //     </Link>
-    //   );
 
       return (
-        <Link href={link}>
-          <div className={`w-24 p-4 mr-2 ml-2 text-center rounded-full drop-shadow-md ${isActive ? 'bg-light-mid text-dark' : 'bg-dark text-light-mid hover:bg-mid hover:text-light'} ${customstyle}`}>
-            <p> {text} </p>
-          </div>
-        </Link>
+        <>
+            <Head>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+            </Head>
+            <Link href={link}>
+            <div className={`w-16 sm:w-24
+                pt-4 pb-4 sm:p-4  
+                text-center rounded-full drop-shadow-md 
+                ${isActive ? 'bg-light-mid text-dark' : 'bg-dark text-light-mid hover:bg-mid hover:text-light'} ${customstyle}`
+                }>
+                <p className="text-base text-xs sm:text-sm"> {text} </p>
+            </div>
+            </Link>
+        </>
       );
   }
   

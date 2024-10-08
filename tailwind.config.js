@@ -17,4 +17,17 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [
+    // Safelist your color classes here
+    'text-dark',
+    'text-mid',
+    'text-light-mid',
+    'text-light',
+    'text-accent',
+    'bg-dark',
+    'bg-mid',
+    'bg-light-mid',
+    'bg-light',
+    'bg-accent',
+  ],
 };
