@@ -2,7 +2,7 @@ import Head from 'next/head';
 import NavBar from '../components/NavBar';
 import TypeWriter from '../components/Typewriter';
 import Layout from '../components/Layout';
-import Colour from '../components/colour';
+import Colour from '../components/ColourTile';
 
 export default function Colours() {
     return (
