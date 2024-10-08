@@ -10,7 +10,7 @@ html, body {
 
 @layer base {
 h1 {
-    @apply text-light-mid m-10 text-3xl sm:text-5xl md:text-6xl;
+    @apply text-light-mid text-3xl sm:text-5xl md:text-6xl;
 
 }
 h2 {
