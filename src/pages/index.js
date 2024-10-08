@@ -8,7 +8,7 @@ export default function Home() {
       <Layout>
         <div >
         <title>Phoebe Stage</title>
-          <TypeWriter text="Who's Phoebe Stage?" style = "text-light-mid m-10 text-8xl" speed={100}/>
+          <TypeWriter text="Who's Phoebe Stage?" textType = "h1" speed={100}/>
         </div>
       </Layout>
     </>

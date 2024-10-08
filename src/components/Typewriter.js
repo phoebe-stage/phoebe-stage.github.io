@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export default function TypeWriter({ text, speed=100, style}) {
+export default function TypeWriter({ text, speed=100, textType = 'span'}) {
     const [displayedText, setDisplayedText] = useState('');
     const [index, setIndex] = useState(0);
 
@@ -15,9 +15,9 @@ export default function TypeWriter({ text, speed=100, style}) {
         }
       }, [index, text, speed]);
 
-
+    const Texttag = textType;
     return (
-        <span className={style}>{displayedText}
+        <Texttag >{displayedText}
             <span className='text-accent animate-blink font-thin'>|</span>
             <style jsx>{`
                 @keyframes blink {
@@ -32,7 +32,6 @@ export default function TypeWriter({ text, speed=100, style}) {
                 animation: blink  1s ease-in-out infinite;
                 }
             `}</style>
-        </span>
+        </Texttag>
       );
   }
-  

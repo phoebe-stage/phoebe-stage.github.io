@@ -8,7 +8,7 @@ export default function About() {
         <Layout>
           <div >
             <title>Phoebe Stage - About</title>
-            <TypeWriter text="About" style = "text-light-mid m-10 text-8xl" speed={100}/>
+            <TypeWriter text="About" textType = "h1" speed={100}/>
           </div>
         </Layout>
       );
