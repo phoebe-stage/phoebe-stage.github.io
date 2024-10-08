@@ -11,7 +11,8 @@ module.exports = {
           'mid' : '#457B9D',
           'light-mid' : '#A8DADC',
           'light' : '#F1FAEE',
-          'accent' : '#E63946'
+          // 'accent' : '#E63946'
+          'accent' : '#FF9FB2',
         }
     },
   },
