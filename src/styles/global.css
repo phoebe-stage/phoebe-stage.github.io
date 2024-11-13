@@ -8,6 +8,20 @@ html, body {
     background-color: #1d3557; /* Set to your dark background */
 }
 
+@layer components {
+    .small_button {
+        @apply w-16 sm:w-24 ;
+    }
+    .med_button {
+        @apply w-24 sm:w-48;
+    }
+    .round_button {
+        @apply size-8;
+    }
+}
+
+
+
 @layer base {
 h1 {
     @apply text-light-mid text-3xl sm:text-5xl md:text-6xl;
@@ -16,7 +30,7 @@ h1 {
 h2 {
     @apply text-lg text-accent;
 }
-body1 {
-    @apply text-sm text-light;
+p {
+    @apply text-lg;
 }
 }

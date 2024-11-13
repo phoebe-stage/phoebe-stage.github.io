@@ -8,10 +8,10 @@ export default function About() {
         <Layout>
           <div >
             <title>Phoebe Stage - About</title>
-            <TypeWriter text="About" textType = "h1" speed={100}/>
-            <div className="p-2 flex justify-center">
+            <TypeWriter text="About me" textType = "h1" speed={100}/>
+            <div className="p-2 flex justify-center drop-shadow-lg">
                 <Image
-                    src="/white-circle.png"
+                    src="/me1.png"
                     alt="Picture of me"
                     width="500"
                     height="500"
@@ -19,8 +19,8 @@ export default function About() {
                 ></Image>
                 <div className = "outline outline-2 flex flex-col justify-center">
                     <h2> Hi, I'm Phoebe</h2>
-                    <body1>Studying - Software Engineering and Mathematics</body1>
-                    <body1>hello again</body1>
+                    <p>Studying - Software Engineering and Mathematics</p>
+                    <p>hello again</p>
                 </div>
             </div>
 

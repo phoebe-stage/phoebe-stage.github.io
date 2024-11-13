@@ -4,13 +4,16 @@ export default function TypeWriter({ text, speed=100, textType = 'span'}) {
     const [displayedText, setDisplayedText] = useState('');
     const [index, setIndex] = useState(0);
 
+    const getRandomNumber = (min, max) => {
+        return Math.random() * (max - min) + min
+      }
 
     useEffect(() => {
         if (index < text.length) {
           const timeout = setTimeout(() => {
             setDisplayedText((prev) => prev + text[index]);
             setIndex((prevIndex) => prevIndex + 1);
-          }, speed);
+          }, getRandomNumber(speed-10,speed));
           return () => clearTimeout(timeout);
         }
       }, [index, text, speed]);
